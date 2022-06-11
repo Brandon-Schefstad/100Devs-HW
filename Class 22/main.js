@@ -134,30 +134,119 @@
 // Want to return different objects {fullname,id} by:
 // Iterating over array, and for each, constructing a new key/value pair and deleting the old ones
 
-let john = { name: 'John', surname: 'Smith', id: 1 };
-let pete = { name: 'Pete', surname: 'Hunt', id: 2 };
-let mary = { name: 'Mary', surname: 'Key', id: 3 };
-let users = [john, pete, mary];
+// let john = { name: 'John', surname: 'Smith', id: 1 };
+// let pete = { name: 'Pete', surname: 'Hunt', id: 2 };
+// let mary = { name: 'Mary', surname: 'Key', id: 3 };
+// let users = [john, pete, mary];
 
-function mapToObject(array) {
-	array.forEach((x) => {
-		x.fullName = x.name + ' ' + x.surname;
-		delete x.name;
-		delete x.surname;
-	});
-	return array;
-}
+// function mapToObject(array) {
+// 	array.forEach((x) => {
+// 		x.fullName = x.name + ' ' + x.surname;
+// 		delete x.name;
+// 		delete x.surname;
+// 	});
+// 	return array;
+// }
 
-console.log(mapToObject(users));
+// console.log(mapToObject(users));
 
 // CODE #######
-// 9.
+// 9. Sort users by age
+// Sort an array of objects by a value
+//  CODE #######
+// let john = { name: 'John', age: 25 };
+// let pete = { name: 'Pete', age: 30 };
+// let mary = { name: 'Mary', age: 28 };
+
+// let arr = [pete, john, mary];
+// function sortByKey(array, key) {
+// 	return array.sort(function (a, b) {
+// 		let x = a[key];
+// 		let y = b[key];
+// 		return x < y ? -1 : x > y ? 1 : 0;
+// 	});
+// }
+// console.log(sortByKey(arr, 'age'));
+
+// 10. Shuffle an array
+// ForEach Element, pick another random index in the array and swap the two elements by reassignment.
+
+// Select other element (math.random)
+// swap two elements
+
 // CODE #######
-// 10.
+// function shuffle(array) {
+// 	array.forEach((x) => {
+// 		const index = array.indexOf(x);
+// 		let reassignment = Math.floor(Math.random() * (array.indexOf(x) + 1));
+// 		// const holding = x;
+// 		// const holding2 = array[reassignment];
+// 		// array[reassignment] = holding;
+// 		// array[array.indexOf(x)] = holding2;
+// 		// [x,array[]]
+// 		console.log(index, reassignment);
+// 		[array[index], array[reassignment]] = [
+// 			array[reassignment],
+// 			array[index],
+// 		];
+// 	});
+// 	return array;
+// }
+
+// 11. Get average age
+// Map ages to Array, average array (add, divide by array.length)
 // CODE #######
-// 11.
+// let john = { name: 'John', age: 25 };
+// let pete = { name: 'Pete', age: 30 };
+// let mary = { name: 'Mary', age: 29 };
+
+// let arr = [john, pete, mary];
+// function getAverageAge(arr) {
+// 	const ageArray = arr.map((x) => x.age);
+// 	let totalAge = ageArray.reduce((sum, current) => sum + current, 0);
+// 	return totalAge / arr.length;
+// }
+// console.log(getAverageAge(arr));
+
+// 12.Filter unique array members
+// Initialize a variable, remove it from Array, if array still has, not unique.
 // CODE #######
-// 12.
-// CODE #######
+// function unique(arr) {
+// 	const playArr = arr;
+// 	let returnArr = [];
+// arr.forEach((x) => {
+// 	let checkArr = arr.slice(arr.indexOf(x));
+// 	console.log(checkArr);
+// 	console.log(checkArr.includes(x));
+// 	if (checkArr.includes('Me')) {
+// 		console.log('We have a winner!');
+// 		returnArr.push(x);
+// 	}
+// });
+// 	for (let i = 0; i < playArr.length; i++) {
+// 		let checkArr = playArr.slice(i + 1);
+// 		console.log(checkArr.includes(playArr[i]));
+// 		if (!checkArr.includes(playArr[i])) {
+// 			returnArr.unshift(playArr[i]);
+// 		} else {
+// 			continue;
+// 		}
+// 	}
+// 	return returnArr;
+// }
+// console.log(
+// 	unique([
+// 		'Hare',
+// 		'Krishna',
+// 		'Hare',
+// 		'Krishna',
+// 		'Krishna',
+// 		'Krishna',
+// 		'Hare',
+// 		'Hare',
+// 		':-O',
+// 	])
+// );
+
 // 13.
 // CODE #######
