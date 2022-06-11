@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer{
+    height: 100px;
+    border: 1px solid blue;
+    clear: both;
+}
+section,div{
+    height: 500px;
+    width: 20%;
+    float: left;
+    border: 1px solid blue;
+}
+article{
+    height: 500px;
+    width: 40%;
+    float: left;
+    border: 1px solid blue;
+}

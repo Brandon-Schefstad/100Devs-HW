@@ -1,0 +1,2 @@
+DND API:
+Querying an API, updating the DOM with JSON content from an array using more complicated javascript including createElement. Uses forEach instead of iterated for loop.

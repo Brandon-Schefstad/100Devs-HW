@@ -1,0 +1,99 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+main{
+    max-width:1000px;
+}
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+section > img{
+    max-width: 495px;
+    padding-top: 10%;
+    border: 1px solid #708090;
+}
+nav{
+    min-width: 100%;
+    list-style: none;
+    font-size: 20px;
+    display:inline-block;
+}
+nav * {
+    float: left;
+    width: 30%;
+}
+ul>li{
+    float:left;
+    width:70%;
+    list-style: none;
+}
+main > nav > a{
+    padding:16px 45px;
+    width: 17%;
+}
+main > nav > ul{
+    padding: 0px 0px;
+}
+nav + section{
+    clear:both;
+}
+
+main>nav+section>section, main>nav+section>section+section{
+    border: 3px solid #708090;
+    width:50%;
+    float:left;
+    height:580px;
+}
+/* TAGLINE */
+nav+section>section>h4 {
+    text-align: left;
+}
+/* Form and Lorem */
+nav+section>section>form, nav+section>section>span{
+    display:block;
+    padding:5% 0%;
+    text-align:left;
+    max-width:50%;
+}
+nav+section>section>h1{
+    padding-top: 4%;
+}
+section>img{
+    image-resolution: from-image;
+}
+
+main > section + section section{
+    float:left;
+    width:25%;
+}
+
+section + h1, h1 + span{
+    clear:both;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

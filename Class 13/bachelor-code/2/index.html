@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bachelor Code</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<section>
+			<h1>The next Bachelorette should have been:</h1>
+
+			<h2 id="andiNext">Andi</h2>
+			<h2 id="claireNext">Claire</h2>
+			<h2 id="sharleenNext">Sharleen</h2>
+		</section>
+
+		<section>
+			<img id="claire" class="hidden" src="imgs/claire.jpg" />
+			<img id="andi" class="hidden" src="imgs/andi.jpg" />
+			<img id="sharleen" class="hidden" src="imgs/sharleen.jpg" />
+		</section>
+
+		<div>
+			<span>
+				Code in JS:
+				<div>
+					const andi = document.querySelector('#andi');
+					<br />const claire = document.querySelector('#claire');
+					<br />const sharleen = document.querySelector('#sharleen');
+				</div>
+				<br />
+				<div>
+					document.querySelector('#andiNext').addEventListener('click',
+					andiNext);<br />
+					document.querySelector('#claireNext').addEventListener('click',
+					claireNext);<br />
+					document.querySelector('#sharleenNext').addEventListener('click',
+					sharleenNext);
+				</div>
+				<br />
+				<div>
+					function andiNext() <br />{ claire.classList.add('hidden');
+					sharleen.classList.add('hidden');
+					andi.classList.toggle('hidden'); } <br />function
+					claireNext() <br />{ sharleen.classList.add('hidden');
+					andi.classList.add('hidden');
+					claire.classList.toggle('hidden'); } <br />function
+					sharleenNext()<br />
+					{ andi.classList.add('hidden');
+					claire.classList.add('hidden');
+					sharleen.classList.toggle('hidden'); }
+				</div>
+			</span>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

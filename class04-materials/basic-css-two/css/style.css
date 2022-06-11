@@ -1,0 +1,29 @@
+li {
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    background: gray;
+    text-align: center;
+}
+/*Please make this section have a height of 300px, a light purple background, a gold border that is 5px thick*/
+section {
+    height: 300px;
+    text-align: center;
+    background: rgb(156, 26, 156);
+    border-style: solid;
+    border-color: gold;
+    border-width: thick;
+}
+h1{
+    text-size: 30px;
+    color: gold;
+    font-family: "Source Sans Pro", sans-serif;
+}
+footer{
+    background: rgb(102,51,0);
+    min-height: 300px;
+    max-width: 70%;
+}
+footer>h2{
+    text-decoration: line-through;
+}

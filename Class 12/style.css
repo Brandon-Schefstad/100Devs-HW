@@ -1,0 +1,205 @@
+body {
+	width: 1200px;
+	margin: auto;
+	min-height: 4000px;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav > ul {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+}
+header > h1 {
+	margin: auto;
+	width: 25%;
+	display: block;
+}
+/* 
+* {
+	border: 1px solid black;
+} */
+.hero {
+	background-image: URL(https://picsum.photos/1200/920);
+	color: white;
+	text-transform: uppercase;
+}
+
+.hero__title {
+	font-size: 3rem;
+	width: 25%;
+}
+.hero__subheading {
+}
+.hero__text {
+	margin: 6rem;
+}
+.hero__informationButton {
+	background-color: black;
+	color: white;
+	margin-bottom: 5rem;
+}
+
+.discount {
+	background-color: black;
+	width: 20%;
+	padding: 1rem;
+}
+.discount__title {
+	font-size: 0.6rem;
+}
+.discount__percentage {
+	font-size: 1.8rem;
+	float: left;
+	width: 20%;
+}
+.discount__text {
+	float: right;
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+.discount__cta {
+	clear: both;
+	background-color: white;
+	margin-bottom: 1rem;
+}
+
+.button {
+	padding: 1rem;
+}
+
+.services {
+	display: flex;
+	margin-inline: 12rem;
+	justify-content: space-around;
+	gap: 1rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+.service {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-bottom: 5rem;
+}
+.momentum {
+	text-transform: uppercase;
+	padding-inline: 8rem;
+
+	display: flex;
+	justify-content: space-around;
+	gap: 2rem;
+	align-items: center;
+	background-color: #f3f4f6;
+	margin-bottom: 3rem;
+}
+.momentum__text {
+}
+.momentum__title {
+	font-size: 2.8rem;
+}
+.momentum__p {
+	text-transform: none;
+}
+.momentum__cta {
+	background-color: black;
+	color: white;
+}
+.momentum__image {
+}
+.second-page {
+	width: 77.5%;
+	margin: auto;
+}
+.staff {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	gap: 1rem;
+}
+
+.staff__info {
+	background-color: black;
+	color: white;
+}
+
+.offer {
+	background-color: #eeefea;
+
+	margin-block: 3rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+}
+.offer__text {
+	display: flex;
+	flex-direction: column;
+	padding: 5rem;
+	font-size: 2rem;
+}
+.offer__percentage {
+	margin-block: 0rem;
+}
+.offer__details {
+}
+.offer__cta {
+	background-color: black;
+	color: white;
+	width: 50%;
+}
+.lookbook {
+	margin: auto;
+}
+.lookbook__title {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 4rem;
+}
+.lookbook__gallery {
+	margin: auto;
+	width: 70%;
+}
+/*.lookbook__gallery--row1,
+.lookbook__gallery--row2 {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1rem;
+} */
+
+.lookbook__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: repeat(3, 250px);
+	justify-items: center;
+	margin: auto;
+}
+
+.look1 {
+}
+.look2 {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+}
+.look3 {
+	grid-column: 3;
+}
+.look4 {
+	grid-column: 1;
+	grid-row: 2;
+}
+.look5 {
+	grid-row: 3;
+	grid-column: 2;
+}
+.look6 {
+	grid-row: 2;
+}

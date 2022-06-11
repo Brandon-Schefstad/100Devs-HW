@@ -1,0 +1,37 @@
+/* Please Make only Rhino and Zebra Blue */
+
+/* Please Make only Hufflepuff Gold */
+
+/* Please select Duck with the highest level of specificity possible */
+
+/* Please select Rhino with the highest level of specificity possible */
+h1{
+    text-align: center;
+    font-size: 45px;
+    border: 10px solid black;
+    margin-bottom: zero;
+}
+section{
+    display: block;
+    border: 2px solid red;
+    height: 250px;
+    width: 32.5%;
+    float:left;
+    font-family: Sans-Serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top:100px;
+}
+section>span{
+    font-family: Sans-Serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 45px;
+    border: 10px solid black;
+    align: bottom;
+    clear:both;
+}
