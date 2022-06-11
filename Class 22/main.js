@@ -116,9 +116,40 @@
 // Got to 20 minutes, can hardcode the answer and will come back to it localStorage.
 
 // 7. Map To Names
+// Array of objects, each is a user.
+// Want to go into each object, grab the name, and put it into another Array. Will use map method
 
 // CODE #######
-// 8.
+// let john = { name: 'John', age: 25 };
+// let pete = { name: 'Pete', age: 30 };
+// let mary = { name: 'Mary', age: 28 };
+// let users = [john, pete, mary];
+// function mapToNames(array) {
+// 	const newArr = array.map((x) => x.name);
+// 	return newArr
+// }
+// console.log(mapToNames(users));
+// 8.Map To Objects
+// Have an array of objects {name,surname,id}
+// Want to return different objects {fullname,id} by:
+// Iterating over array, and for each, constructing a new key/value pair and deleting the old ones
+
+let john = { name: 'John', surname: 'Smith', id: 1 };
+let pete = { name: 'Pete', surname: 'Hunt', id: 2 };
+let mary = { name: 'Mary', surname: 'Key', id: 3 };
+let users = [john, pete, mary];
+
+function mapToObject(array) {
+	array.forEach((x) => {
+		x.fullName = x.name + ' ' + x.surname;
+		delete x.name;
+		delete x.surname;
+	});
+	return array;
+}
+
+console.log(mapToObject(users));
+
 // CODE #######
 // 9.
 // CODE #######
