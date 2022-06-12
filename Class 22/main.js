@@ -248,5 +248,21 @@
 // 	])
 // );
 
-// 13.
+// 13.Create keyed object from array
+// Receive an array of objects, then abstract out to a new object using their id value as keys in the new object.
 // CODE #######
+// let users = [
+//   { id: 'john', name: 'John Smith', age: 20 },
+//   { id: 'ann', name: 'Ann Smith', age: 24 },
+//   { id: 'pete', name: 'Pete Peterson', age: 31 },
+// ];
+
+// let usersById = groupById(users);
+// function groupById(arr) {
+//   let userObject = {};
+//   let adjustedArr = arr.map((x) => x.id);
+//   adjustedArr.forEach((x) => {
+//     userObject[x] = users[adjustedArr.indexOf(x)];
+//   });
+//   console.log(userObject);
+// }
